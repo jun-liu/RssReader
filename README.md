@@ -1,2 +1,4 @@
-Rss Reader - MindHacks
-Andorid/IOS(Phonegap)
+Rss Reader
+---
+-MindHacks
+A RSS-reader for Andorid/IOS(Phonegap).
