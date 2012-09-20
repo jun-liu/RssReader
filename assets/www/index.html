@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1，user-scalable=0">    
+    <title></title> 
+    
+    <!--<script type="text/javascript" charset="utf-8" src="js/cordova-1.7.0.js"></script>  -->
+    
+    
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+    <link rel="stylesheet" href="css/detailWea.css" />
+    
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+	<!-- <script type="text/javascript" src="js/json2.js" charset="gb2312"></script>     -->
+    <script type="text/javascript" src="js/RssFeeds.js" charset="gb2312"></script>
+    <script type="text/javascript" src="js/addRssFeed.js" charset="gb2312"></script>
+	<script type="text/javascript" src="js/sets.js" charset="gb2312"></script>
+<!-- 	<script src="js/outSitePage.js" charset="gb2312"></script> -->
+	
+		<script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+        <script type="text/javascript" src="js/detailWea.js" charset="gb2312"></script>
+</head> 
+<body onload="onLoad()"> 
+
+<div data-role="page" id="mainPage">
+
+    <div data-role="header" id="header">
+ 		
+    	
+    	<!-- <span id='div_WeaText' class="showWeaText"></span>
+     <span id='div_WeaImg' class="showWeaImg"></span> -->
+  		<a data-role="button" id="button_wea" href="detailWea.html" >weather</a> 
+  		<h4>Rss Feed List</h4>
+  		<a data-role="button" id="button_Edit">Edit</a> 
+  		
+    </div>
+    
+    <div data-role="content" id="content">  
+		<div id="status"> 
+	        <ul id="feedsList" data-role="listview"  data-inset="true" data-split-icon="check"></ul>
+	    </div>    
+    </div>
+	
+	<div data-role="footer" id="footer"  class="ui-bar" data-position="fixed" style="position:fixed">	
+		<a class='a_add' href="addRssFeed.html" data-role="button" data-icon="plus">Add</a>	
+	  	<a class='a_set' href="sets.html" data-role="button" data-icon="gear" >Set</a> 
+  		
+  		<div class="ui-grid-a" id='edit_Buttons'>
+            <div class="ui-block-a">
+            	<a id='delete_button' href="#" data-role="button"  >删除</a> 
+            </div>
+            <div class="ui-block-b">
+            	<a id='download_button' href="#" data-role="button"  >下载</a>
+            </div>
+        </div>
+        
+			
+    </div>
+    
+</div>
+
+
+</body>
+
+</html>
