@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<meta charset="utf-8">
+
+	<!-- Ensure we set a viewport so everything scales appropriately on mobile devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <title>Sets</title>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+		<script src="js/sets.js" charset="gb2312"></script>
+</head>
+
+<body body onload="loadTheme()">
+	<!-- Start of first page -->
+	<div data-role="page" id="setThemePage" class="jqm-page" >
+
+		<div data-role="header">
+			<h1>Sets</h1>
+			<a href="javascript:void(0);" onclick='window.location="RssFeeds.html";' data-role="button" data-icon="back">Back</a>
+		</div><!-- /header -->
+
+		<div data-role="content" id="first-content">
+			
+			<div data-role="fieldcontain">
+			    <label for="select-theme" class="select">Theme List</label>
+			    <select data-native-menu="false" name="select-themes" id="select-theme">
+			        <option value="a" class='themeOption'>Theme A(Black)</option>
+			        <option value="b" class='themeOption'>Theme B(Blue)</option>
+			        <option value="c" class='themeOption'>Theme C(Gray)</option>
+			        <option value="d" class='themeOption'>Theme D(Light Gray)</option>
+			        <option value="e" class='themeOption'>Theme E(Yellow)</option>
+			    </select>
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="slider">Auto load images:</label>
+				<select name="slider" id="slider_loadImages" data-role="slider">
+					<option value="off">Off</option>
+					<option value="on">On</option>
+				</select> 
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="slider">Auto orientation:</label>
+				<select name="slider" id="slider_orientation" data-role="slider">
+					<option value="off">Off</option>
+					<option value="on">On</option>
+				</select> 
+			</div>
+			
+                
+		</div><!-- /content -->
+			
+	</div><!-- /page -->
+
+
+</body>
+</html>

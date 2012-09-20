@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">    
+    <title></title> 
+   	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+    <script src="js/addRssFeed.js" charset="gb2312"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="addRssFeedPage" >
+
+    <div data-role="header" id="header">
+        <h1>Add Rss Feed</h1>
+        <a href="javascript:void(0);" onclick='window.location="RssFeeds.html";' data-role="button" data-icon="back">Back</a>
+    </div>
+
+    <div data-role="content" id="content">  
+		<div id="status"></div>  
+        <input id="rssFeedUrl" value="http://">
+        <!-- <label for="select-class" class="select">种子类别</label>
+		<select data-native-menu="false" name="select-classes" id="select-class">
+			<option value="news" class='classOption'>新闻</option>
+			<option value="blog" class='classOption'>博客</option>
+		</select> -->
+        <button id="subscribe" onclick="addRssFeed()">Subscribe</button>
+<!--         <button id="importFromOpml" onclick="importFromOpml()">Import(OPML)</button> -->
+    </div>
+
+    <div data-role="footer" id="footer" data-position="fixed">
+        <h4>Rss Reader by MindHacks</h4>
+    </div>
+
+    
+</div>
+
+
+</body>
+</html>

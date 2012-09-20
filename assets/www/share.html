@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" charset="UTF-8" content="width=screen.width; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>分享</title>  
+		<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>  
+		<script type="text/javascript" src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/childbrowser.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/share.js"></script>
+		<script type="text/javascript" src="js/sets.js" charset="gb2312"></script>
+		<style type="text/css">
+		  .ui-header .ui-title { margin-right:20px; margin-left:20px; }
+		</style>    
+		
+	</head>
+  <body onload="init()">
+	<div data-role="page" data-theme="c" id="page-share">
+		<div  data-role="header">
+			<h1>Share</h1>
+			<a href="javascript:void(0);" onclick='window.location="outSitePage.html";' data-role="button" data-icon="back">Back</a>
+		</div>
+		<div data-role="content">	
+			<!-- <div data-role=button id='oauth'>授权</div> -->
+			<textarea id="tweettextarea" rows="4" cols="30" style="height:150px;"></textarea>
+			<div data-role=button id='tweet'>发布!</div>
+		</div>	
+	</div> <!-- /page-home -->
+  </body>
+</html>

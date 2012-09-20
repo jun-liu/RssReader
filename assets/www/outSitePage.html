@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html > 
+    <head> 
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">    
+    <title></title> 
+   
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+
+    <script src="js/outSitePage.js" charset="gb2312"></script>
+    
+     <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+     <script type="text/javascript" charset="utf-8" src="js/childbrowser.js"></script>
+     
+	<script src="js/sets.js" charset="gb2312"></script>
+    
+</head> 
+<body> 
+
+<div data-role="page" id="outSitePage" data-dom-cache="true">
+
+    <div data-role="header" data-position="fixed" style="position:fixed" id="header">
+        <h1></h1>
+        <a href="javascript:void(0);" onclick='window.location="Contents.html";' data-role="button" data-icon="back">Back</a>
+        <a href="#" onclick='share()' id='shareButton' data-role="button" >分享</a>
+
+    </div>
+    
+
+		<div id="showImages" data-role="button" style="margin:10px;color:blue;">显示图片</div>
+	    <div data-role="content" id="siteContainer" ></div>
+
+    <div data-role="footer" data-position="fixed" id="footer">
+    	<h4>Rss Reader by MindHacks</h4>
+    </div>
+        
+</div>
+
+</body>
+</html>

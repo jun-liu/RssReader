@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html > 
+    <head> 
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">    
+    <title></title> 
+   
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	
+	<!-- <script src="js/wb.js" type="text/javascript" charset="utf-8"></script> -->
+	
+	<script src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+    <script src="js/contents.js" charset="gb2312"></script>
+    <script src="js/sets.js" charset="gb2312"></script>
+    
+      <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="js/childbrowser.js"></script>      
+    <link rel="stylesheet" href="css/pullToRefresh.css" />
+    <script src="js/iscroll-lite.js"></script>
+<!--     <script src="js/pullToRefresh.js"></script> -->
+
+    <link rel="stylesheet" href="css/Contents.css" />
+    
+</head> 
+<body> 
+
+<div data-role="page" id="linksPage" style="width:320" data-dom-cache="true">
+
+    <div data-role="header" data-position="fixed"  style="position:fixed" id="header" >
+        <h1 id='rssTitle'></h1>
+        <a href="javascript:void(0);" onclick='window.location="RssFeeds.html";' data-role="button" data-icon="back">Back</a>
+        <a href="javascript:void(0);" id="refreshButton" data-role="button" data-icon="refresh">Refresh</a>
+    </div>
+
+    <div data-role="content" id="content" style="width:320">  
+		<div id="status">
+		
+		</div>
+		<div id="wrapper">
+		<div id="scroller">
+		<div id="pullDown">
+			<span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+		</div>
+		
+		
+		
+			<ul id="linksList" data-role="listview" data-inset="true" data-split-icon="Check">
+			</ul>
+			
+		<div id="pullUp">
+			<span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+		</div>
+		</div>
+    </div>
+
+<!-- data-position="fixed"  style="position:fixed" -->
+    <div data-role="footer"  id="footer" data-position="fixed"  style="position:fixed" >
+        <h4>Rss Reader by MindHacks</h4>
+    </div>
+
+    </div>
+</div>
+
+
+
+<!-- <div data-role="page" id="outSitePage" data-dom-cache="true">
+
+    <div data-role="header" data-position="fixed" id="header">
+        
+        <a href="javascript:void(0);" onclick='window.location="#linksPage";' data-role="button" data-icon="back">Back</a>
+        <a href="#" onclick='share()' data-role="button" >分享</a>
+        <h1></h1>
+    </div>
+    
+		<div id="showImages" data-role="button" style="margin:10px;color:blue;">显示图片</div>
+	    <div data-role="content" id="siteContainer" ></div>
+
+    
+    <div data-role="footer" data-position="fixed" id="footer">
+    	<h4>Rss Reader by MindHacks</h4>
+    </div>
+        
+</div> -->
+
+</body>
+</html>

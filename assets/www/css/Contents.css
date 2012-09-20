@@ -1,0 +1,12 @@
+.news_title{
+	font-weight:bold;
+	font-size:larger;
+}
+
+.news_description{
+/* 	height:60px; */
+	font-weight:lighter;
+	font-size:smaller;
+	opacity:0.6;
+	
+}

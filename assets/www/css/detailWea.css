@@ -1,0 +1,181 @@
+.li-selected{
+	background-color:green;
+	color:red;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+#currentWea {
+	width:100%
+	margin:0px;
+	padding:0px;
+	height:150px; 
+	float:left;
+	/*width:100%; */
+	background-image:url('images/weabg.png');
+	
+}
+#currentWea1{
+/* 	width:60%; */
+	margin:0 0 0 5px;
+	padding:0px;
+	height:150px; 
+	float:left;
+	color:white;
+	text-align:left;
+}
+#currentWea2{
+/* 	width:40%; */
+	margin:0 5 0 0px;
+	padding:0px;
+	height:120px; 
+	float:right;
+	color:white;
+	text-align:right;
+}
+#forecast_row1,#forecast_row2{
+	margin:5 0 0 0px;
+	padding:0px;
+}	
+#forecast1,#forecast3{
+	padding:0px;
+	width:49.5%;
+	float:left;
+	color:black;
+	border-right-style: dashed;
+	text-align:center;
+}
+#forecast2,#forecast4{
+	padding:0px;
+	width:49.5% ;
+	float:left;
+	color:black;
+	text-align:center;
+}
+#forecast1,#forecast2{
+	border-bottom-style: dashed;
+}
+.showWeaText{
+	padding:0px;
+	margin-right:7%;
+	float:right;
+	
+}
+.showWeaText p{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+	
+}
+.showWeaImg{
+	padding:0px;
+	margin:0px;
+	float:right;
+	
+}
+
+
+#footer{
+	text-align:center;
+}
+#footer .a_add{
+	float:left;
+}
+#footer .a_set{
+	float:right;
+	margin-right:7%;
+}
+#button_Edit{
+	float:right;
+	
+}
+/** CSS for non-standard jQuery Mobile styles or Codiqa components **/
+.split-wrapper {
+  width: 100%;
+  min-height: 200px;
+  clear: both;
+}
+@media all and (min-width: 650px) {
+	.content-secondary {
+		text-align: left;
+		float: left;
+		width: 45%;
+		background: none;
+		padding: 1.5em 6% 3em 0;
+		margin: 0;
+	}
+	.content-secondary {
+    background: none;
+    border-top: none;
+	}
+	.content-primary {
+		width: 45%;
+		float: right;
+		margin-right: 1%;
+		padding-right: 1%;
+	}
+	.content-primary ul:first-child {
+		margin-top: 0;
+	}
+  .content-secondary ul.ui-listview, .content-secondary ul.ui-listview-inset {
+    margin: 0;
+  }
+  .content-secondary ul.ui-listview .ui-li-divider, .content-secondary ul.ui-listview .ui-li {
+    border-radius: 0px;
+  }
+  .content-secondary ul.ui-listview .ui-li {
+    border-left: 0;
+    border-right: 0;
+  }
+	.content-secondary h2 {
+		position: absolute;
+		left: -9999px;
+	}
+	.content-secondary .ui-li-divider {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+  
+}
+@media all and (min-width: 750px){
+	.content-secondary {
+		width: 34%;
+	}
+	.content-primary {
+		width: 60%;
+		padding-right: 1%;
+	}	
+  .content-secondary ul.ui-listview-inset {
+}
+
+@media all and (min-width: 1200px){
+	.content-secondary {
+		width: 30%;
+		padding-right:6%;
+		margin: 0px 0 20px 5%;
+	}
+	.content-secondary ul {
+    margin: 0;
+  }
+	.content-secondary {
+		margin: 0;
+		padding: 0;
+	}
+	.content-primary {
+		width: 50%;
+		margin-right: 5%;
+		padding-right: 3%;
+	}
+	.content-primary {
+		width: 60%;
+	}
+}
+

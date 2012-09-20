@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.2.min.css" />
+        <link rel="stylesheet" href="css/detailWea.css" />
+        
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.1.0-rc.2.min.js"></script>
+		
+	     <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+        <script type="text/javascript" src="js/detailWea.js" charset="gb2312"></script>
+    </head>
+    <body onload="initWeathers()">
+        <!-- Home -->
+        <div data-role="page" id="detailWeatherPage">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <a href="javascript:void(0);" onclick='window.location="RssFeeds.html";' id='weather_back' data-role="button" data-icon="back">Back</a>
+                <h3>
+                    Weather
+                </h3>
+               <!--  <a data-role="button" data-direction="reverse" data-transition="fade" data-theme="b" href="#page1" data-icon="refresh" data-iconpos="left" class="ui-btn-right">
+                Refresh
+                </a> -->
+            </div>
+            
+            <div data-role="content" style="padding: 0px">
+                 <div id="currentWea" style="width:100%">
+                 	<div id="currentWea1" style="vertical-align:middle" >
+	                    
+	                 </div>
+	                 <div id="currentWea2" style="vertical-align:middle" >
+	                    
+	                 </div>
+                 	
+                 </div>
+
+                 <div id="forecasts" style="width:100%">
+                    <div id="forecast_row1">
+	                    <div id="forecast1" >
+	                   		<p>1</p>
+	                    </div>
+	                    <div id="forecast2" >
+	                    	<p>2</p>
+	                    </div>
+                    </div>
+                    <div id="forecast_row1">
+	                    <div id="forecast3" >
+	                   		<p>3</p>
+	                    </div>
+	                    <div id="forecast4" >
+	                   		<p>4</p>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                <h3>
+                    Powered by Google.Inc
+                </h3>
+            </div>
+        </div>
+        
+    </body>
+</html>
